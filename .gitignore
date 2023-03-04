@@ -30,5 +30,3 @@ build/
 .navigation
 captures/
 output.json
-
-fileHashes.lock
