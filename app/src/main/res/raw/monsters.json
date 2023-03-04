@@ -1,0 +1,62 @@
+{"monsters":[
+  {"id":"E Algox Icespeaker",
+    "class":"Icespeaker",
+    "elite":true,
+    "attack":[4,4,4,5,5,6,6,6],
+    "move": [2,2,3,3,4,4,4,4]
+  },
+  {"id":"Algox Icespeaker",
+    "class":"Icespeaker",
+    "elite":false,
+    "attack":[3,3,3,3,4,4,5,5],
+    "move": [2,2,2,3,3,3,3,4]
+  },
+  {"id":"E Algox Snowspeaker",
+    "class":"Snowspeaker",
+    "elite":true,
+    "attack":[3,4,4,4,5,6,6,7],
+    "move": [2,2,2,3,3,4,4,4]
+  },
+  {"id":"Algox Snowspeaker",
+    "class":"Snowspeaker",
+    "elite":false,
+    "attack":[2,3,3,3,4,4,5,5],
+    "move": [1,1,2,2,2,3,3,3]
+  },
+  {"id":"E Algox Scout",
+    "class":"Scout",
+    "elite":true,
+    "attack":[3,3,4,4,4,5,6,7],
+    "move": [4,4,5,5,5,5,6,6]
+  },
+  {"id":"Algox Scout",
+    "class":"Scout",
+    "elite":false,
+    "attack":[2,2,2,3,3,3,4,4],
+    "move": [3,4,4,4,4,5,5,5]
+  },
+  {"id":"E Frost Demon",
+    "class":"Frost Demon",
+    "elite":true,
+    "attack":[3,3,4,4,4,5,6,7],
+    "move": [3,3,4,4,4,4,4,4]
+  },
+  {"id":"Frost Demon",
+    "class":"Frost Demon",
+    "elite":false,
+    "attack":[3,3,3,4,4,4,5,5],
+    "move": [2,2,3,3,3,3,3,3]
+  },
+  {"id":"E Snow Imp",
+    "class":"Snow Imp",
+    "elite":true,
+    "attack":[2,2,2,2,3,3,4,4],
+    "move": [2,2,3,3,3,4,4,4]
+  },
+  {"id":"Snow Imp",
+    "class":"Snow Imp",
+    "elite":false,
+    "attack":[1,1,1,2,2,2,3,3],
+    "move": [2,2,2,2,2,3,3,3]
+  }
+]}
