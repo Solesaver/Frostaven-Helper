@@ -48,15 +48,51 @@
     "move": [2,2,3,3,3,3,3,3]
   },
   {"id":"E Snow Imp",
-    "class":"Snow Imp",
+    "class":"Imp",
     "elite":true,
     "attack":[2,2,2,2,3,3,4,4],
     "move": [2,2,3,3,3,4,4,4]
   },
   {"id":"Snow Imp",
-    "class":"Snow Imp",
+    "class":"Imp",
     "elite":false,
     "attack":[1,1,1,2,2,2,3,3],
     "move": [2,2,2,2,2,3,3,3]
+  },
+  {"id":"E Ancient Artillery",
+    "class":"Ancient Artillery",
+    "elite":true,
+    "attack":[3,3,3,4,5,5,6,7],
+    "move": [0,0,0,0,0,0,0,0]
+  },
+  {"id":"Ancient Artillery",
+    "class":"Ancient Artillery",
+    "elite":false,
+    "attack":[2,2,2,3,3,3,4,5],
+    "move": [0,0,0,0,0,0,0,0]
+  },
+  {"id":"E Night Demon",
+    "class":"Night Demon",
+    "elite":true,
+    "attack":[4,4,4,5,5,6,7,8],
+    "move": [4,4,4,4,5,5,5,5]
+  },
+  {"id":"Night Demon",
+    "class":"Night Demon",
+    "elite":false,
+    "attack":[3,3,4,4,5,5,5,6],
+    "move": [3,3,3,4,4,4,4,4]
+  },
+  {"id":"E Steel Automaton",
+    "class":"Steel Automaton",
+    "elite":true,
+    "attack":[4,4,5,5,5,6,7,7],
+    "move": [2,2,2,3,3,3,3,4]
+  },
+  {"id":"Steel Automaton",
+    "class":"Steel Automaton",
+    "elite":false,
+    "attack":[3,3,3,4,4,4,4,5],
+    "move": [1,2,2,2,2,3,3,4]
   }
 ]}
