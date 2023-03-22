@@ -131,7 +131,9 @@ enum class MonsterClass {
     Imp,
     AncientArtillery,
     NightDemon,
-    SteelAutomaton
+    SteelAutomaton,
+    WindDemon,
+    Boss
 }
 
 enum class PlayerId {
@@ -159,7 +161,10 @@ enum class MonsterId {
     ENightDemon,
     NightDemon,
     ESteelAutomaton,
-    SteelAutomaton
+    SteelAutomaton,
+    EWindDemon,
+    WindDemon,
+    AlgoxStormcaller
 }
 
 fun translatePlayerId(id: String): PlayerId {
