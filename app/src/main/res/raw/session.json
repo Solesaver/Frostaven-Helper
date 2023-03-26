@@ -1,8 +1,9 @@
-{"level":1,
+{"level":2,
   "monsters":[
+    "Algox Stormcaller",
     "E Frost Demon",
     "Frost Demon",
-    "E Snow Imp",
-    "Snow Imp"
+    "E Wind Demon",
+    "Wind Demon"
   ]
 }

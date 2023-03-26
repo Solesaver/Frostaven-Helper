@@ -46,7 +46,7 @@
       {"name":"Hasty Assault",        "attack":-1, "move":1, "init":38, "shuffle":false}
     ]
   },
-  {"name":"Snow Imp",
+  {"name":"Imp",
     "deck":[
       {"name":"Phase Out",            "attack":0, "move":0, "init":5, "shuffle":false},
       {"name":"Calculated Strike",    "attack":1, "move":-1, "init":76, "shuffle":false},
@@ -55,6 +55,64 @@
       {"name":"Nothing Special",      "attack":0, "move":0, "init":37, "shuffle":false},
       {"name":"Restoration",          "attack":0, "move":1, "init":42, "shuffle":false},
       {"name":"Dark Charm",           "attack":-1, "move":0, "init":43, "shuffle":true}
+    ]
+  },
+  {"name":"Ancient Artillery",
+    "deck":[
+      {"name":"Concussive Burst",     "attack":-1, "move":0, "init":46, "shuffle":false},
+      {"name":"Heavy Shot",           "attack":1, "move":-0, "init":95, "shuffle":false},
+      {"name":"Grenade",              "attack":-1, "move":0, "init":37, "shuffle":false},
+      {"name":"Long Shot",            "attack":-1, "move":0, "init":46, "shuffle":false},
+      {"name":"Defensive Ordinance",  "attack":-2, "move":0, "init":17, "shuffle":false},
+      {"name":"Massive Blast",        "attack":-1, "move":0, "init":57, "shuffle":false},
+      {"name":"Exploding Ammunition", "attack":0, "move":0, "init":71, "shuffle":true}
+    ]
+  },
+  {"name":"Night Demon",
+    "deck":[
+      {"name":"Into Darkness",        "attack":-2, "move":1, "init":37, "shuffle":false},
+      {"name":"Black Thorns",         "attack":-2, "move":0, "init":26, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":41, "shuffle":true},
+      {"name":"The Night Feeds",      "attack":-1, "move":0, "init":15, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":4, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":22, "shuffle":false},
+      {"name":"Death's Embrace",      "attack":1, "move":-1, "init":36, "shuffle":true},
+      {"name":"Impale",               "attack":-1, "move":0, "init":35, "shuffle":false}
+    ]
+  },
+  {"name":"Steel Automaton",
+    "deck":[
+      {"name":"Heavy Footfalls",      "attack":0, "move":2, "init":48, "shuffle":false},
+      {"name":"Body Block",           "attack":0, "move":1, "init":24, "shuffle":false},
+      {"name":"Mortar Shell",         "attack":-1, "move":0, "init":64, "shuffle":false},
+      {"name":"Immovable Object",     "attack":0, "move":0, "init":10, "shuffle":true},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":95, "shuffle":true},
+      {"name":"Clobber",              "attack":1, "move":0, "init":76, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":70, "shuffle":false},
+      {"name":"Unstoppable Force",    "attack":-1, "move":1, "init":45, "shuffle":false}
+    ]
+  },
+  {"name":"Boss",
+    "deck":[
+      {"name":"11 Power",             "attack":0, "move":0, "init":11, "shuffle":false},
+      {"name":"14 Power",             "attack":0, "move":0, "init":14, "shuffle":false},
+      {"name":"17 Power",             "attack":0, "move":0, "init":17, "shuffle":false},
+      {"name":"73 Strength",          "attack":0, "move":0, "init":73, "shuffle":true},
+      {"name":"79 Strength",          "attack":0, "move":0, "init":79, "shuffle":false},
+      {"name":"85 Strength",          "attack":0, "move":0, "init":85, "shuffle":true},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":36, "shuffle":false},
+      {"name":"Twin Shots",           "attack":-1, "move":-1, "init":52, "shuffle":false}
+    ]
+  },
+  {"name":"Wind Demon",
+    "deck":[
+      {"name":"Tailwind",             "attack":0, "move":0, "init":21, "shuffle":true},
+      {"name":"Whirlwinds",           "attack":-1, "move":0, "init":29, "shuffle":false},
+      {"name":"Cutting Blast",        "attack":1, "move":-1, "init":43, "shuffle":false},
+      {"name":"Eye of the Storm",     "attack":-1, "move":-1, "init":2, "shuffle":false},
+      {"name":"Into the air",         "attack":-1, "move":0, "init":9, "shuffle":false},
+      {"name":"Cyclone",              "attack":0, "move":0, "init":37, "shuffle":false},
+      {"name":"Blast of Air",         "attack":0, "move":0, "init":43, "shuffle":false}
     ]
   }
 ]}

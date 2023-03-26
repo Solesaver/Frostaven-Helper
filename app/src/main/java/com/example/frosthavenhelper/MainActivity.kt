@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
 data class Context (
     val nav: NavHostController,
     val players: Map<PlayerId, Player> = emptyMap(),
-    val monsters: Map<MonsterId, Monster> = emptyMap(),
+    var monsters: Map<MonsterId, Monster> = emptyMap(),
     val session: SessionInfo,
     val att_database: Map<MonsterClass, AttackEntry> = emptyMap(),
     val mon_database: Map<MonsterId, MonsterBase> = emptyMap()
@@ -113,8 +113,8 @@ data class MonsterBase (
 }
 
 data class SessionInfo (
-    val level: Int = 0,
-    val monsters: Array<MonsterId> = arrayOf()
+    var level: Int = 0,
+    val monsters: MutableList<MonsterId> = mutableListOf()
 )
 
 data class CombatantId (
@@ -128,7 +128,12 @@ enum class MonsterClass {
     Snowspeaker,
     Scout,
     FrostDemon,
-    SnowImp
+    Imp,
+    AncientArtillery,
+    NightDemon,
+    SteelAutomaton,
+    WindDemon,
+    Boss
 }
 
 enum class PlayerId {
@@ -150,7 +155,16 @@ enum class MonsterId {
     EFrostDemon,
     FrostDemon,
     ESnowImp,
-    SnowImp
+    SnowImp,
+    EAncientArtillery,
+    AncientArtillery,
+    ENightDemon,
+    NightDemon,
+    ESteelAutomaton,
+    SteelAutomaton,
+    EWindDemon,
+    WindDemon,
+    AlgoxStormcaller
 }
 
 fun translatePlayerId(id: String): PlayerId {
@@ -264,7 +278,7 @@ fun parseSession(): SessionInfo {
     val session = JSONObject(fullString)
 
     val jsonMonsters = session.getJSONArray("monsters")
-    val monsters = Array(jsonMonsters.length()) {MonsterId.None}
+    val monsters = MutableList(jsonMonsters.length()) {MonsterId.None}
     for(i in 0 until jsonMonsters.length()) {
         monsters[i] = translateMonsterId(jsonMonsters.getString(i))
     }
@@ -303,12 +317,13 @@ fun Navigation() {
         att_database = parseAttacks(),
         mon_database = monDatabase
     )
-    NavHost(navController = context.nav, startDestination = "EnterAttacks") {
-        composable("EnterAttacks") { EnterAttacks(context) }
-        composable("RoundInfo") { RoundInfo(context) }
-        composable("CheckData") { CheckData(context) }
+    NavHost(navController = context.nav, startDestination = "Set Session") {
+        composable("Set Session") { SetSession(context) }
+        composable("Enter Attacks") { EnterAttacks(context) }
+        composable("Round Info") { RoundInfo(context) }
+        composable("Check Data") { CheckData(context) }
     }
-    context.nav.navigate("EnterAttacks")
+    context.nav.navigate("Set Session")
 }
 
 @Composable
@@ -325,14 +340,14 @@ fun EnterAttacks(context: Context) {
             Row(modifier = Modifier.fillMaxWidth()) {
                 Text(
                     text = "${entry.name}: ",
-                    style = MaterialTheme.typography.h5,
+                    style = MaterialTheme.typography.h6,
                     modifier = Modifier
                         .padding(vertical = Dp(10f))
                         .align(alignment = Alignment.CenterVertically))
                 DeckDropdown(entry, context)
             }
         }
-        context.players.forEach {
+        context.players.forEach { it ->
             if (!it.value.active)
                 return@forEach
             Row(modifier = Modifier.fillMaxWidth()) {
@@ -340,7 +355,7 @@ fun EnterAttacks(context: Context) {
                 val scope = rememberCoroutineScope()
                 Text(
                     "${it.value.name}: ",
-                    style = MaterialTheme.typography.h5,
+                    style = MaterialTheme.typography.h6,
                     modifier = Modifier
                         .padding(vertical = Dp(10f))
                         .align(alignment = Alignment.CenterVertically)
@@ -364,7 +379,7 @@ fun EnterAttacks(context: Context) {
                         else
                             it.value.init = text.text.toInt()
                     },
-                    textStyle = MaterialTheme.typography.h5,
+                    textStyle = MaterialTheme.typography.h6,
                     modifier = Modifier
                         .onFocusChanged { focusState ->
                             scope.launch {
@@ -387,14 +402,19 @@ fun EnterAttacks(context: Context) {
             }
         }
         Button (onClick = {
-            context.nav.navigate("RoundInfo")
+            context.nav.navigate("Round Info")
         }) {
-            Text(text = "Round Info", style = MaterialTheme.typography.h5)
+            Text(text = "Round Info", style = MaterialTheme.typography.h6)
         }
         Button (onClick = {
-            context.nav.navigate("CheckData")
+            context.nav.navigate("Check Data")
         }) {
-            Text(text = "CheckData", style = MaterialTheme.typography.h5)
+            Text(text = "Check Data", style = MaterialTheme.typography.h6)
+        }
+        Button (onClick = {
+            context.nav.navigate("Set Session")
+        }) {
+            Text(text = "Set Session", style = MaterialTheme.typography.h6)
         }
     }
 }
@@ -411,7 +431,7 @@ fun DeckDropdown(entry: AttackEntry, context: Context) {
                 .background(Color.Gray)
                 .padding(vertical = Dp(10f))
                 .align(alignment = Alignment.CenterStart),
-            style = MaterialTheme.typography.h5)
+            style = MaterialTheme.typography.h6)
         DropdownMenu(
             expanded = expanded,
             onDismissRequest = { expanded = false },
@@ -436,7 +456,7 @@ fun DeckDropdown(entry: AttackEntry, context: Context) {
                     }
                     expanded = false
                 }) {
-                    Text(text = s.name, style = MaterialTheme.typography.h5)
+                    Text(text = s.name, style = MaterialTheme.typography.h6)
                 }
             }
         }
@@ -500,33 +520,33 @@ fun RoundInfo (context: Context) {
                         val mon = context.monsters[it.monster]!!
                         Text(
                             "${mon.init} - ${mon.name}: Att(${mon.attack}) Mov(${mon.move})",
-                            style = MaterialTheme.typography.h5
+                            style = MaterialTheme.typography.h6
                         )
                         Button(onClick = {
                             mon.active = false
                             toggle = !toggle
                         }) {
-                            Text("X", style = MaterialTheme.typography.h5)
+                            Text("X", style = MaterialTheme.typography.h6)
                         }
                     } else {
                         val player = context.players[it.player]!!
                         Text(
                             "${player.init} - ${player.name}",
-                            style = MaterialTheme.typography.h5
+                            style = MaterialTheme.typography.h6
                         )
                         Button(onClick = {
                             player.active = false
                             toggle = !toggle
                         }) {
-                            Text("X", style = MaterialTheme.typography.h5)
+                            Text("X", style = MaterialTheme.typography.h6)
                         }
                     }
                 }
             }
             Button(onClick = {
-                context.nav.navigate("EnterAttacks")
+                context.nav.navigate("Enter Attacks")
             }) {
-                Text(text = "Enter Attacks", style = MaterialTheme.typography.h5)
+                Text(text = "Enter Attacks", style = MaterialTheme.typography.h6)
             }
             Spacer(modifier = Modifier.size(Dp(32f)))
             gone.forEach {
@@ -535,25 +555,25 @@ fun RoundInfo (context: Context) {
                         val mon = context.monsters[it.monster]!!
                         Text(
                             mon.name,
-                            style = MaterialTheme.typography.h5
+                            style = MaterialTheme.typography.h6
                         )
                         Button(onClick = {
                             mon.active = true
                             toggle = !toggle
                         }) {
-                            Text("O", style = MaterialTheme.typography.h5)
+                            Text("O", style = MaterialTheme.typography.h6)
                         }
                     } else {
                         val player = context.players[it.player]!!
                         Text(
                             player.name,
-                            style = MaterialTheme.typography.h5
+                            style = MaterialTheme.typography.h6
                         )
                         Button(onClick = {
                             player.active = true
                             toggle = !toggle
                         }) {
-                            Text("O", style = MaterialTheme.typography.h5)
+                            Text("O", style = MaterialTheme.typography.h6)
                         }
                     }
                 }
@@ -576,7 +596,7 @@ fun CheckData (context: Context) {
                     .background(Color.Gray)
                     .padding(vertical = Dp(10f))
                     .align(alignment = Alignment.CenterStart),
-                style = MaterialTheme.typography.h5)
+                style = MaterialTheme.typography.h6)
             DropdownMenu(
                 expanded = expanded,
                 onDismissRequest = { expanded = false },
@@ -591,7 +611,7 @@ fun CheckData (context: Context) {
                         selectedIndex = index
                         expanded = false
                     }) {
-                        Text(text = s.name, style = MaterialTheme.typography.h5)
+                        Text(text = s.name, style = MaterialTheme.typography.h6)
                     }
                 }
             }
@@ -600,15 +620,144 @@ fun CheckData (context: Context) {
         val base = context.mon_database[translateMonsterId(monster.name)]!!
         val attack = context.att_database[monster.mon_class]!!.deck.elementAt(monster.selection)
         val level = context.session.level
-        Text("Base Attack: ${base.attack[level]}", style = MaterialTheme.typography.h5)
-        Text("Attack Modifier: ${attack.attack}", style = MaterialTheme.typography.h5)
-        Text("Base Move: ${base.move[level]}", style = MaterialTheme.typography.h5)
-        Text("Move Modifier: ${attack.move}", style = MaterialTheme.typography.h5)
+        Text("Base Attack: ${base.attack[level]}", style = MaterialTheme.typography.h6)
+        Text("Attack Modifier: ${attack.attack}", style = MaterialTheme.typography.h6)
+        Text("Base Move: ${base.move[level]}", style = MaterialTheme.typography.h6)
+        Text("Move Modifier: ${attack.move}", style = MaterialTheme.typography.h6)
 
         Button (onClick = {
-            context.nav.navigate("EnterAttacks")
+            context.nav.navigate("Enter Attacks")
         }) {
-            Text(text = "Enter Attacks", style = MaterialTheme.typography.h5)
+            Text(text = "Enter Attacks", style = MaterialTheme.typography.h6)
+        }
+    }
+}
+
+@Composable
+fun SetSession (context: Context) {
+    val monsters = context.mon_database.entries.toTypedArray()
+    Column {
+        Row(modifier = Modifier.fillMaxWidth()) {
+            var text by remember { mutableStateOf(TextFieldValue("${context.session.level}")) }
+            val scope = rememberCoroutineScope()
+            Text(
+                "Encounter Level: ",
+                style = MaterialTheme.typography.h6,
+                modifier = Modifier
+                    .padding(vertical = Dp(10f))
+                    .align(alignment = Alignment.CenterVertically)
+            )
+            TextField(
+                value = text,
+                onValueChange = { newText ->
+                    var builder = ""
+                    var count = 0
+                    run loop@{
+                        newText.text.forEach {
+                            if (++count > 1)
+                                return@loop
+                            if (it.isDigit())
+                                builder += it
+                        }
+                    }
+                    text = TextFieldValue(text = builder, selection = TextRange(builder.length))
+                    if (text.text.isNotEmpty() && text.text.isDigitsOnly())
+                        context.session.level = text.text.toInt()
+                },
+                textStyle = MaterialTheme.typography.h6,
+                modifier = Modifier
+                    .onFocusChanged { focusState ->
+                        scope.launch {
+                            delay(0)
+                            if (focusState.isFocused) {
+                                val len = text.text.length
+                                text = if (len > 0) {
+                                    text.copy(selection = TextRange(0, len))
+                                } else {
+                                    text.copy(selection = TextRange(0))
+                                }
+                            }
+                        }
+                    },
+                keyboardOptions = KeyboardOptions(
+                    keyboardType = KeyboardType.Number,
+                    imeAction = ImeAction.Next
+                )
+            )
+        }
+        var toggle by remember { mutableStateOf(false) }
+        Row {
+            Text(
+                "Add: ",
+                style = MaterialTheme.typography.h6,
+                modifier = Modifier
+                    .padding(vertical = Dp(10f))
+                    .align(alignment = Alignment.CenterVertically)
+            )
+            var expanded by remember { mutableStateOf(false) }
+            var selectedIndex by remember { mutableStateOf(0) }
+            Box(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = monsters.elementAt(selectedIndex).value.name,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable(onClick = { expanded = true })
+                        .background(Color.Gray)
+                        .padding(vertical = Dp(10f))
+                        .align(alignment = Alignment.CenterStart),
+                    style = MaterialTheme.typography.h6
+                )
+                DropdownMenu(
+                    expanded = expanded,
+                    onDismissRequest = { expanded = false },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(
+                            Color.Gray
+                        )
+                ) {
+                    monsters.forEachIndexed { index, s ->
+                        DropdownMenuItem(onClick = {
+                            selectedIndex = index
+                            expanded = false
+                        }) {
+                            Text(text = s.value.name, style = MaterialTheme.typography.h6)
+                        }
+                    }
+                }
+            }
+            Button(onClick = {
+                val id = monsters.elementAt(selectedIndex).key
+                if (!context.session.monsters.contains(id))
+                    context.session.monsters.add(id)
+                toggle = !toggle
+            }) {
+                Text("O", style = MaterialTheme.typography.h6)
+            }
+        }
+        key(toggle) {
+            context.session.monsters.forEach {
+                Row {
+                    Text(
+                        text = context.mon_database[it]!!.name,
+                        style = MaterialTheme.typography.h6,
+                        modifier = Modifier.align(Alignment.CenterVertically)
+                    )
+                    Button(onClick = {
+                        context.session.monsters.remove(it)
+                        toggle = !toggle
+                    }) {
+                        Text("X", style = MaterialTheme.typography.h6)
+                    }
+                }
+            }
+        }
+
+        Button (onClick = {
+            context.monsters = populateMonsters(context.session, context.mon_database)
+            context.nav.navigate("Enter Attacks")
+        }) {
+            Text(text = "Enter Attacks", style = MaterialTheme.typography.h6)
         }
     }
 }
