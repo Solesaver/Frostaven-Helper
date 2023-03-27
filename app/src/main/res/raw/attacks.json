@@ -1,62 +1,4 @@
 {"classes":[
-  {"name":"Icespeaker",
-    "deck":[
-      {"name":"Warding Swipe",        "attack":-1, "move":1, "init":17, "shuffle":true},
-      {"name":"Two-Fisted Strike",    "attack":-1, "move":-1, "init":41, "shuffle":false},
-      {"name":"Ice Wall",             "attack":0, "move":0, "init":8, "shuffle":false},
-      {"name":"One with the Earth",   "attack":0, "move":0, "init":12, "shuffle":false},
-      {"name":"Knockout Punch",       "attack":-1, "move":0, "init":76, "shuffle":false},
-      {"name":"Frozen Debris",        "attack":0, "move":-1, "init":39, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":56, "shuffle":true},
-      {"name":"Terrifying Growl",     "attack":0, "move":0, "init":80, "shuffle":false}
-    ]
-  },
-  {"name":"Snowspeaker",
-    "deck":[
-      {"name":"Blinding Vortex",      "attack":-1, "move":0, "init":22, "shuffle":false},
-      {"name":"Sleet",                "attack":1, "move":0, "init":43, "shuffle":false},
-      {"name":"Snowstorm",            "attack":0, "move":0, "init":6, "shuffle":true},
-      {"name":"Snow Drifts",          "attack":0, "move":0, "init":66, "shuffle":false},
-      {"name":"Cold Winds",           "attack":0, "move":0, "init":18, "shuffle":false},
-      {"name":"Blistering Assault",   "attack":-1, "move":1, "init":30, "shuffle":false},
-      {"name":"Hail",                 "attack":1, "move":-1, "init":59, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":27, "shuffle":true}
-    ]
-  },
-  {"name":"Scout",
-    "deck":[
-      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":40, "shuffle":false},
-      {"name":"Greed",                "attack":0, "move":1, "init":35, "shuffle":true},
-      {"name":"Rapid Bolts",          "attack":-1, "move":0, "init":79, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":53, "shuffle":false},
-      {"name":"Noxious Blade",        "attack":2, "move":0, "init":92, "shuffle":false},
-      {"name":"Rancid Arrow",         "attack":0, "move":-2, "init":54, "shuffle":false},
-      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":69, "shuffle":false},
-      {"name":"Cruel Bow",            "attack":-1, "move":-1, "init":29, "shuffle":true}
-    ]
-  },
-  {"name":"Frost Demon",
-    "deck":[
-      {"name":"Chilled to the Bone",  "attack":-1, "move":-1, "init":58, "shuffle":false},
-      {"name":"Cold Claws",           "attack":0, "move":-1, "init":78, "shuffle":true},
-      {"name":"Frozen Shards",        "attack":0, "move":-1, "init":58, "shuffle":false},
-      {"name":"Gather the Frost",     "attack":0, "move":0, "init":18, "shuffle":false},
-      {"name":"Ice Barrier",          "attack":0, "move":1, "init":18, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":58, "shuffle":false},
-      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":38, "shuffle":false}
-    ]
-  },
-  {"name":"Imp",
-    "deck":[
-      {"name":"Phase Out",            "attack":0, "move":0, "init":5, "shuffle":false},
-      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":76, "shuffle":false},
-      {"name":"Rotten Sting",         "attack":-1, "move":0, "init":43, "shuffle":true},
-      {"name":"Tip the Scales",       "attack":0, "move":0, "init":24, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":37, "shuffle":false},
-      {"name":"Restoration",          "attack":0, "move":1, "init":42, "shuffle":false},
-      {"name":"Dark Charm",           "attack":-1, "move":0, "init":43, "shuffle":true}
-    ]
-  },
   {"name":"Ancient Artillery",
     "deck":[
       {"name":"Concussive Burst",     "attack":-1, "move":0, "init":46, "shuffle":false},
@@ -68,28 +10,28 @@
       {"name":"Exploding Ammunition", "attack":0, "move":0, "init":71, "shuffle":true}
     ]
   },
-  {"name":"Night Demon",
+  {"name":"Algox Icespeaker",
     "deck":[
-      {"name":"Into Darkness",        "attack":-2, "move":1, "init":37, "shuffle":false},
-      {"name":"Black Thorns",         "attack":-2, "move":0, "init":26, "shuffle":false},
-      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":41, "shuffle":true},
-      {"name":"The Night Feeds",      "attack":-1, "move":0, "init":15, "shuffle":false},
-      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":4, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":22, "shuffle":false},
-      {"name":"Death's Embrace",      "attack":1, "move":-1, "init":36, "shuffle":true},
-      {"name":"Impale",               "attack":-1, "move":0, "init":35, "shuffle":false}
+      {"name":"Warding Swipe",        "attack":-1, "move":1, "init":17, "shuffle":true},
+      {"name":"Two-Fisted Strike",    "attack":-1, "move":-1, "init":41, "shuffle":false},
+      {"name":"Ice Wall",             "attack":0, "move":0, "init":8, "shuffle":false},
+      {"name":"One with the Earth",   "attack":0, "move":0, "init":12, "shuffle":false},
+      {"name":"Knockout Punch",       "attack":-1, "move":0, "init":76, "shuffle":false},
+      {"name":"Frozen Debris",        "attack":0, "move":-1, "init":39, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":56, "shuffle":true},
+      {"name":"Terrifying Growl",     "attack":0, "move":0, "init":80, "shuffle":false}
     ]
   },
-  {"name":"Steel Automaton",
+  {"name":"Algox Snowspeaker",
     "deck":[
-      {"name":"Heavy Footfalls",      "attack":0, "move":2, "init":48, "shuffle":false},
-      {"name":"Body Block",           "attack":0, "move":1, "init":24, "shuffle":false},
-      {"name":"Mortar Shell",         "attack":-1, "move":0, "init":64, "shuffle":false},
-      {"name":"Immovable Object",     "attack":0, "move":0, "init":10, "shuffle":true},
-      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":95, "shuffle":true},
-      {"name":"Clobber",              "attack":1, "move":0, "init":76, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":70, "shuffle":false},
-      {"name":"Unstoppable Force",    "attack":-1, "move":1, "init":45, "shuffle":false}
+      {"name":"Blinding Vortex",      "attack":-1, "move":0, "init":22, "shuffle":false},
+      {"name":"Sleet",                "attack":1, "move":0, "init":43, "shuffle":false},
+      {"name":"Snowstorm",            "attack":0, "move":0, "init":6, "shuffle":true},
+      {"name":"Snow Drifts",          "attack":0, "move":0, "init":66, "shuffle":false},
+      {"name":"Cold Winds",           "attack":0, "move":0, "init":18, "shuffle":false},
+      {"name":"Blistering Assault",   "attack":-1, "move":1, "init":30, "shuffle":false},
+      {"name":"Hail",                 "attack":1, "move":-1, "init":59, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":27, "shuffle":true}
     ]
   },
   {"name":"Boss",
@@ -104,15 +46,109 @@
       {"name":"Twin Shots",           "attack":-1, "move":-1, "init":52, "shuffle":false}
     ]
   },
+  {"name":"Earth Demon",
+    "deck":[
+      {"name":"Reckless Charge",      "attack":0, "move":1, "init":79, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":83, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":62, "shuffle":false},
+      {"name":"Strong Growth",        "attack":0, "move":0, "init":40, "shuffle":true},
+      {"name":"Earthen Eruption",     "attack":-1, "move":0, "init":87, "shuffle":false},
+      {"name":"Ground Slam",          "attack":-1, "move":-1, "init":93, "shuffle":false},
+      {"name":"Boulder Throw",        "attack":0, "move":0, "init":71, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":42, "shuffle":true}
+    ]
+  },
+  {"name":"Flame Demon",
+    "deck":[
+      {"name":"Heat Aura",            "attack":0, "move":0, "init":77, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":24, "shuffle":false},
+      {"name":"Fire Spout",           "attack":0, "move":-1, "init":8, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":67, "shuffle":false},
+      {"name":"Raging Blaze",         "attack":-2, "move":0, "init":30, "shuffle":true},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":3, "shuffle":false},
+      {"name":"Explosive Blast",      "attack":0, "move":0, "init":46, "shuffle":true},
+      {"name":"Intense Torch",        "attack":0, "move":0, "init":49, "shuffle":false}
+    ]
+  },
+  {"name":"Frost Demon",
+    "deck":[
+      {"name":"Chilled to the Bone",  "attack":-1, "move":-1, "init":58, "shuffle":false},
+      {"name":"Cold Claws",           "attack":0, "move":-1, "init":78, "shuffle":true},
+      {"name":"Frozen Shards",        "attack":0, "move":-1, "init":58, "shuffle":false},
+      {"name":"Gather the Frost",     "attack":0, "move":0, "init":18, "shuffle":false},
+      {"name":"Ice Barrier",          "attack":0, "move":1, "init":18, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":58, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":38, "shuffle":false}
+    ]
+  },
+  {"name":"Ice Wraith",
+    "deck":[
+      {"name":"Shard Strike",         "attack":0, "move":0, "init":16, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":71, "shuffle":false},
+      {"name":"Fade Out",             "attack":0, "move":0, "init":59, "shuffle":false},
+      {"name":"Shift Form",           "attack":-1, "move":0, "init":95, "shuffle":true},
+      {"name":"Restore Essence",      "attack":0, "move":0, "init":13, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":41, "shuffle":false},
+      {"name":"Unholy Strength",      "attack":0, "move":0, "init":59, "shuffle":false},
+      {"name":"Renewed Aggression",   "attack":0, "move":0, "init":44, "shuffle":true}
+    ]
+  },
+  {"name":"Imp",
+    "deck":[
+      {"name":"Phase Out",            "attack":0, "move":0, "init":5, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":76, "shuffle":false},
+      {"name":"Rotten Sting",         "attack":-1, "move":0, "init":43, "shuffle":true},
+      {"name":"Tip the Scales",       "attack":0, "move":0, "init":24, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":37, "shuffle":false},
+      {"name":"Restoration",          "attack":0, "move":1, "init":42, "shuffle":false},
+      {"name":"Dark Charm",           "attack":-1, "move":0, "init":43, "shuffle":true}
+    ]
+  },
+  {"name":"Scout",
+    "deck":[
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":40, "shuffle":false},
+      {"name":"Greed",                "attack":0, "move":1, "init":35, "shuffle":true},
+      {"name":"Rapid Bolts",          "attack":-1, "move":0, "init":79, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":53, "shuffle":false},
+      {"name":"Noxious Blade",        "attack":2, "move":0, "init":92, "shuffle":false},
+      {"name":"Rancid Arrow",         "attack":0, "move":-2, "init":54, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":69, "shuffle":false},
+      {"name":"Cruel Bow",            "attack":-1, "move":-1, "init":29, "shuffle":true}
+    ]
+  },
+  {"name":"Night Demon",
+    "deck":[
+      {"name":"Into Darkness",        "attack":-2, "move":1, "init":37, "shuffle":false},
+      {"name":"Black Thorns",         "attack":-2, "move":0, "init":26, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":41, "shuffle":true},
+      {"name":"The Night Feeds",      "attack":-1, "move":0, "init":15, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":4, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":22, "shuffle":false},
+      {"name":"Death's Embrace",      "attack":1, "move":-1, "init":36, "shuffle":true},
+      {"name":"Impale",               "attack":-1, "move":0, "init":35, "shuffle":false}
+    ]
+  },
   {"name":"Wind Demon",
     "deck":[
       {"name":"Tailwind",             "attack":0, "move":0, "init":21, "shuffle":true},
       {"name":"Whirlwinds",           "attack":-1, "move":0, "init":29, "shuffle":false},
       {"name":"Cutting Blast",        "attack":1, "move":-1, "init":43, "shuffle":false},
       {"name":"Eye of the Storm",     "attack":-1, "move":-1, "init":2, "shuffle":false},
-      {"name":"Into the air",         "attack":-1, "move":0, "init":9, "shuffle":false},
+      {"name":"Into Thin air",         "attack":-1, "move":0, "init":9, "shuffle":false},
       {"name":"Cyclone",              "attack":0, "move":0, "init":37, "shuffle":false},
       {"name":"Blast of Air",         "attack":0, "move":0, "init":43, "shuffle":false}
+    ]
+  },
+  {"name":"Steel Automaton",
+    "deck":[
+      {"name":"Heavy Footfalls",      "attack":0, "move":2, "init":48, "shuffle":false},
+      {"name":"Body Block",           "attack":0, "move":1, "init":24, "shuffle":false},
+      {"name":"Mortar Shell",         "attack":-1, "move":0, "init":64, "shuffle":false},
+      {"name":"Immovable Object",     "attack":0, "move":0, "init":10, "shuffle":true},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":95, "shuffle":true},
+      {"name":"Clobber",              "attack":1, "move":0, "init":76, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":70, "shuffle":false},
+      {"name":"Unstoppable Force",    "attack":-1, "move":1, "init":45, "shuffle":false}
     ]
   }
 ]}

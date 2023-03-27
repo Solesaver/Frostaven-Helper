@@ -1,4 +1,16 @@
 {"monsters":[
+  {"id":"E Ancient Artillery",
+    "class":"Ancient Artillery",
+    "elite":true,
+    "attack":[3,3,3,4,5,5,6,7],
+    "move": [0,0,0,0,0,0,0,0]
+  },
+  {"id":"Ancient Artillery",
+    "class":"Ancient Artillery",
+    "elite":false,
+    "attack":[2,2,2,3,3,3,4,5],
+    "move": [0,0,0,0,0,0,0,0]
+  },
   {"id":"E Algox Icespeaker",
     "class":"Icespeaker",
     "elite":true,
@@ -10,18 +22,6 @@
     "elite":false,
     "attack":[3,3,3,3,4,4,5,5],
     "move": [2,2,2,3,3,3,3,4]
-  },
-  {"id":"E Algox Snowspeaker",
-    "class":"Snowspeaker",
-    "elite":true,
-    "attack":[3,4,4,4,5,6,6,7],
-    "move": [2,2,2,3,3,4,4,4]
-  },
-  {"id":"Algox Snowspeaker",
-    "class":"Snowspeaker",
-    "elite":false,
-    "attack":[2,3,3,3,4,4,5,5],
-    "move": [1,1,2,2,2,3,3,3]
   },
   {"id":"E Algox Scout",
     "class":"Scout",
@@ -35,6 +35,48 @@
     "attack":[2,2,2,3,3,3,4,4],
     "move": [3,4,4,4,4,5,5,5]
   },
+  {"id":"E Algox Snowspeaker",
+    "class":"Snowspeaker",
+    "elite":true,
+    "attack":[3,4,4,4,5,6,6,7],
+    "move": [2,2,2,3,3,4,4,4]
+  },
+  {"id":"Algox Snowspeaker",
+    "class":"Snowspeaker",
+    "elite":false,
+    "attack":[2,3,3,3,4,4,5,5],
+    "move": [1,1,2,2,2,3,3,3]
+  },
+  {"id":"Algox Stormcaller",
+    "class":"Boss",
+    "elite":false,
+    "attack":[3,3,4,4,5,5,6,7],
+    "move": [2,3,3,3,3,3,3,3]
+  },
+  {"id":"E Earth Demon",
+    "class":"Earth Demon",
+    "elite":true,
+    "attack":[4,4,4,4,5,5,6,7],
+    "move": [2,2,2,2,3,3,3,3]
+  },
+  {"id":"Earth Demon",
+    "class":"Earth Demon",
+    "elite":false,
+    "attack":[3,3,3,3,4,4,4,5],
+    "move": [2,2,2,3,2,2,3,3]
+  },
+  {"id":"E Flame Demon",
+    "class":"Flame Demon",
+    "elite":true,
+    "attack":[2,2,3,3,4,4,5,6],
+    "move": [3,3,3,3,4,4,4,4]
+  },
+  {"id":"Flame Demon",
+    "class":"Flame Demon",
+    "elite":false,
+    "attack":[2,2,3,3,3,3,4,4],
+    "move": [3,3,3,3,4,4,4,4]
+  },
   {"id":"E Frost Demon",
     "class":"Frost Demon",
     "elite":true,
@@ -45,6 +87,42 @@
     "class":"Frost Demon",
     "elite":false,
     "attack":[3,3,3,4,4,4,5,5],
+    "move": [2,2,3,3,3,3,3,3]
+  },
+  {"id":"E Night Demon",
+    "class":"Night Demon",
+    "elite":true,
+    "attack":[4,4,4,5,5,6,7,8],
+    "move": [4,4,4,4,5,5,5,5]
+  },
+  {"id":"Night Demon",
+    "class":"Night Demon",
+    "elite":false,
+    "attack":[3,3,4,4,5,5,5,6],
+    "move": [3,3,3,4,4,4,4,4]
+  },
+  {"id":"E Wind Demon",
+    "class":"Wind Demon",
+    "elite":true,
+    "attack":[3,3,3,4,5,5,5,6],
+    "move": [3,3,4,4,4,4,4,4]
+  },
+  {"id":"Wind Demon",
+    "class":"Wind Demon",
+    "elite":false,
+    "attack":[2,2,2,3,3,3,3,4],
+    "move": [3,3,4,4,4,4,4,4]
+  },
+  {"id":"E Ice Wraith",
+    "class":"Ice Wraith",
+    "elite":true,
+    "attack":[3,3,3,4,4,5,5,6],
+    "move": [4,4,5,5,5,5,5,5]
+  },
+  {"id":"Ice Wraith",
+    "class":"Ice Wraith",
+    "elite":false,
+    "attack":[2,2,2,3,3,3,4,5],
     "move": [2,2,3,3,3,3,3,3]
   },
   {"id":"E Snow Imp",
@@ -59,30 +137,6 @@
     "attack":[1,1,1,2,2,2,3,3],
     "move": [2,2,2,2,2,3,3,3]
   },
-  {"id":"E Ancient Artillery",
-    "class":"Ancient Artillery",
-    "elite":true,
-    "attack":[3,3,3,4,5,5,6,7],
-    "move": [0,0,0,0,0,0,0,0]
-  },
-  {"id":"Ancient Artillery",
-    "class":"Ancient Artillery",
-    "elite":false,
-    "attack":[2,2,2,3,3,3,4,5],
-    "move": [0,0,0,0,0,0,0,0]
-  },
-  {"id":"E Night Demon",
-    "class":"Night Demon",
-    "elite":true,
-    "attack":[4,4,4,5,5,6,7,8],
-    "move": [4,4,4,4,5,5,5,5]
-  },
-  {"id":"Night Demon",
-    "class":"Night Demon",
-    "elite":false,
-    "attack":[3,3,4,4,5,5,5,6],
-    "move": [3,3,3,4,4,4,4,4]
-  },
   {"id":"E Steel Automaton",
     "class":"Steel Automaton",
     "elite":true,
@@ -94,23 +148,5 @@
     "elite":false,
     "attack":[3,3,3,4,4,4,4,5],
     "move": [1,2,2,2,2,3,3,4]
-  },
-  {"id":"Algox Stormcaller",
-    "class":"Boss",
-    "elite":false,
-    "attack":[3,3,4,4,5,5,6,7],
-    "move": [2,3,3,3,3,3,3,3]
-  },
-  {"id":"E Wind Demon",
-    "class":"Wind Demon",
-    "elite":true,
-    "attack":[3,3,3,4,5,5,5,6],
-    "move": [3,3,4,4,4,4,4,4]
-  },
-  {"id":"Wind Demon",
-    "class":"Wind Demon",
-    "elite":false,
-    "attack":[2,2,2,3,3,3,3,4],
-    "move": [3,3,4,4,4,4,4,4]
   }
 ]}
