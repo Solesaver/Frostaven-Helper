@@ -81,6 +81,41 @@
       {"name":"Hasty Assault",        "attack":-1, "move":1, "init":38, "shuffle":false}
     ]
   },
+  {"name":"Night Demon",
+    "deck":[
+      {"name":"Into Darkness",        "attack":-2, "move":1, "init":37, "shuffle":false},
+      {"name":"Black Thorns",         "attack":-2, "move":0, "init":26, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":41, "shuffle":true},
+      {"name":"The Night Feeds",      "attack":-1, "move":0, "init":15, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":4, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":22, "shuffle":false},
+      {"name":"Death's Embrace",      "attack":1, "move":-1, "init":36, "shuffle":true},
+      {"name":"Impale",               "attack":-1, "move":0, "init":35, "shuffle":false}
+    ]
+  },
+  {"name":"Wind Demon",
+    "deck":[
+      {"name":"Tailwind",             "attack":0, "move":0, "init":21, "shuffle":true},
+      {"name":"Whirlwinds",           "attack":-1, "move":0, "init":29, "shuffle":false},
+      {"name":"Cutting Blast",        "attack":1, "move":-1, "init":43, "shuffle":false},
+      {"name":"Eye of the Storm",     "attack":-1, "move":-1, "init":2, "shuffle":false},
+      {"name":"Into Thin air",        "attack":-1, "move":0, "init":9, "shuffle":false},
+      {"name":"Cyclone",              "attack":0, "move":0, "init":37, "shuffle":false},
+      {"name":"Blast of Air",         "attack":0, "move":0, "init":43, "shuffle":false}
+    ]
+  },
+  {"name":"Flaming Bladespinner",
+    "deck":[
+      {"name":"Spinning Charge",      "attack":-1, "move":1, "init":68, "shuffle":false},
+      {"name":"Flame Jets",           "attack":0, "move":2, "init":43, "shuffle":false},
+      {"name":"Defensive Blades",     "attack":0, "move":0, "init":12, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":2, "init":38, "shuffle":true},
+      {"name":"Firestorm",            "attack":0, "move":0, "init":17, "shuffle":false},
+      {"name":"Heated Sweep",         "attack":0, "move":0, "init":58, "shuffle":false},
+      {"name":"Increase Momentum",    "attack":-1, "move":0, "init":33, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-2, "init":78, "shuffle":true}
+    ]
+  },
   {"name":"Ice Wraith",
     "deck":[
       {"name":"Shard Strike",         "attack":0, "move":0, "init":16, "shuffle":false},
@@ -116,27 +151,16 @@
       {"name":"Cruel Bow",            "attack":-1, "move":-1, "init":29, "shuffle":true}
     ]
   },
-  {"name":"Night Demon",
+  {"name":"Ruined Machine",
     "deck":[
-      {"name":"Into Darkness",        "attack":-2, "move":1, "init":37, "shuffle":false},
-      {"name":"Black Thorns",         "attack":-2, "move":0, "init":26, "shuffle":false},
-      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":41, "shuffle":true},
-      {"name":"The Night Feeds",      "attack":-1, "move":0, "init":15, "shuffle":false},
-      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":4, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":22, "shuffle":false},
-      {"name":"Death's Embrace",      "attack":1, "move":-1, "init":36, "shuffle":true},
-      {"name":"Impale",               "attack":-1, "move":0, "init":35, "shuffle":false}
-    ]
-  },
-  {"name":"Wind Demon",
-    "deck":[
-      {"name":"Tailwind",             "attack":0, "move":0, "init":21, "shuffle":true},
-      {"name":"Whirlwinds",           "attack":-1, "move":0, "init":29, "shuffle":false},
-      {"name":"Cutting Blast",        "attack":1, "move":-1, "init":43, "shuffle":false},
-      {"name":"Eye of the Storm",     "attack":-1, "move":-1, "init":2, "shuffle":false},
-      {"name":"Into Thin air",         "attack":-1, "move":0, "init":9, "shuffle":false},
-      {"name":"Cyclone",              "attack":0, "move":0, "init":37, "shuffle":false},
-      {"name":"Blast of Air",         "attack":0, "move":0, "init":43, "shuffle":false}
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":41, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":85, "shuffle":false},
+      {"name":"Devastating Tackle",   "attack":2, "move":0, "init":42, "shuffle":false},
+      {"name":"Self-Destruct",        "attack":0, "move":0, "init":93, "shuffle":true},
+      {"name":"Latch On",             "attack":0, "move":1, "init":31, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":63, "shuffle":false},
+      {"name":"Fuel Leak",            "attack":0, "move":1, "init":29, "shuffle":false},
+      {"name":"Signal Jam",           "attack":0, "move":0, "init":56, "shuffle":true}
     ]
   },
   {"name":"Steel Automaton",

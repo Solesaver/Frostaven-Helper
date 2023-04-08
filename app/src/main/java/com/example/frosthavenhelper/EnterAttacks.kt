@@ -21,7 +21,7 @@ fun EnterAttacks(context: Context) {
                 updateMonsters(context, entry, index)
             }
         }
-        context.players.forEach { it ->
+        context.players.forEach {
             if (!it.value.active)
                 return@forEach
             NumberEntryRow(it.value.name, it.value.init, 2) {init: Int ->

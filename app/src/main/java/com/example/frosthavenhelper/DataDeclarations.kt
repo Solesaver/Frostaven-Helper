@@ -14,9 +14,11 @@ enum class MonsterClass {
     FrostDemon,
     NightDemon,
     WindDemon,
+    FlamingBladespinner,
     IceWraith,
     Imp,
     Scout,
+    RuinedMachine,
     SteelAutomaton
 }
 enum class MonsterId {
@@ -40,10 +42,14 @@ enum class MonsterId {
     NightDemon,
     EWindDemon,
     WindDemon,
+    EFlamingBladespinner,
+    FlamingBladespinner,
     EIceWraith,
     IceWraith,
     ESnowImp,
     SnowImp,
+    ERuinedMachine,
+    RuinedMachine,
     ESteelAutomaton,
     SteelAutomaton
 }

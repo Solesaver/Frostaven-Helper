@@ -54,7 +54,7 @@ fun RoundInfo (context: Context) {
                     if (it.monster != null) {
                         val mon = context.monsters[it.monster]!!
                         Text(
-                            "${mon.init} - ${mon.name}: Att(${mon.attack}) Mov(${mon.move})",
+                            "${mon.init} - ${mon.name}: Mov(${mon.move}) Att(${mon.attack})",
                             style = MaterialTheme.typography.h6
                         )
                         ToggleButton(false, mutable) {

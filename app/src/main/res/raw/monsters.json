@@ -137,6 +137,30 @@
     "attack":[1,1,1,2,2,2,3,3],
     "move": [2,2,2,2,2,3,3,3]
   },
+  {"id":"E Flaming Bladespinner",
+    "class":"Flaming Bladespinner",
+    "elite":true,
+    "attack":[3,3,3,4,4,5,5,5],
+    "move": [2,2,2,2,3,3,3,4]
+  },
+  {"id":"Flaming Bladespinner",
+    "class":"Flaming Bladespinner",
+    "elite":false,
+    "attack":[2,2,3,3,3,4,4,4],
+    "move": [2,2,2,3,3,3,3,4]
+  },
+  {"id":"E Ruined Machine",
+    "class":"Ruined Machine",
+    "elite":true,
+    "attack":[2,2,2,3,3,3,4,4],
+    "move": [1,1,2,2,2,3,3,4]
+  },
+  {"id":"Ruined Machine",
+    "class":"Ruined Machine",
+    "elite":false,
+    "attack":[1,1,1,2,2,2,3,3],
+    "move": [1,1,2,2,2,2,2,3]
+  },
   {"id":"E Steel Automaton",
     "class":"Steel Automaton",
     "elite":true,
