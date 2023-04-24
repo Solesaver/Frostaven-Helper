@@ -116,6 +116,52 @@
       {"name":"Calculated Strike",    "attack":1, "move":-2, "init":78, "shuffle":true}
     ]
   },
+  {"name":"Frozen Corpse",
+    "deck":[
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":71, "shuffle":true},
+      {"name":"Cold Snap",            "attack":-1, "move":1, "init":42, "shuffle":false},
+      {"name":"Thawed Strike",        "attack":1, "move":-1, "init":68, "shuffle":false},
+      {"name":"Icy Swipe",            "attack":1, "move":-1, "init":84, "shuffle":false},
+      {"name":"Freezing Embrace",     "attack":0, "move":1, "init":23, "shuffle":false},
+      {"name":"Frost Breath",         "attack":-1, "move":0, "init":39, "shuffle":true}
+    ]
+  },
+  {"name":"Lurker Clawcrusher",
+    "deck":[
+      {"name":"Smash Armor",          "attack":0, "move":-1, "init":58, "shuffle":false},
+      {"name":"Take Hostage",         "attack":-1, "move":0, "init":13, "shuffle":true},
+      {"name":"Crush Armor",          "attack":-1, "move":0, "init":36, "shuffle":false},
+      {"name":"Frantic Swipes",       "attack":-2, "move":1, "init":31, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":47, "shuffle":false},
+      {"name":"Crippling Claw",       "attack":-1, "move":0, "init":44, "shuffle":false},
+      {"name":"Earthen Blow",         "attack":1, "move":-1, "init":60, "shuffle":true},
+      {"name":"Claw Guard",           "attack":0, "move":0, "init":11, "shuffle":false}
+    ]
+  },
+  {"name":"Lurker Mindsnipper",
+    "deck":[
+      {"name":"Hasty Assault",        "attack":-1, "move":2, "init":10, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-2, "init":34, "shuffle":false},
+      {"name":"Beguiling Thoughts",   "attack":-2, "move":0, "init":18, "shuffle":false},
+      {"name":"Paralyze",             "attack":-1, "move":0, "init":46, "shuffle":false},
+      {"name":"Psychic Shock",        "attack":0, "move":0, "init":6, "shuffle":true},
+      {"name":"Consume All Hope",     "attack":-1, "move":0, "init":22, "shuffle":false},
+      {"name":"Instill Fear",         "attack":-1, "move":0, "init":37, "shuffle":false},
+      {"name":"Turn the Weak",        "attack":-2, "move":0, "init":51, "shuffle":true}
+    ]
+  },
+  {"name":"Lurker Soldier",
+    "deck":[
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":28, "shuffle":false},
+      {"name":"Focused Strikes",      "attack":0, "move":0, "init":38, "shuffle":false},
+      {"name":"Beserk Rage",          "attack":1, "move":0, "init":64, "shuffle":false},
+      {"name":"Hardened by Frost",    "attack":-1, "move":0, "init":23, "shuffle":true},
+      {"name":"Defensive Claws",      "attack":0, "move":0, "init":11, "shuffle":true},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":38, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":61, "shuffle":false},
+      {"name":"Strength of the Deep", "attack":-1, "move":0, "init":41, "shuffle":false}
+    ]
+  },
   {"name":"Ice Wraith",
     "deck":[
       {"name":"Shard Strike",         "attack":0, "move":0, "init":16, "shuffle":false},
