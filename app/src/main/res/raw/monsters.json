@@ -161,6 +161,30 @@
     "attack":[2,2,2,2,3,3,4,5],
     "move": [1,1,1,2,2,2,2,3]
   },
+  {"id":"E Living Doom",
+    "class":"Living Doom",
+    "elite":true,
+    "attack":[4,4,5,5,5,6,7,7],
+    "move": [2,3,3,4,4,4,4,4]
+  },
+  {"id":"Living Doom",
+    "class":"Living Doom",
+    "elite":false,
+    "attack":[3,3,4,4,4,4,5,5],
+    "move": [2,2,2,2,3,3,3,4]
+  },
+  {"id":"E Living Spirit",
+    "class":"Living Spirit",
+    "elite":true,
+    "attack":[3,3,4,4,4,5,5,6],
+    "move": [3,3,3,4,4,4,4,4]
+  },
+  {"id":"Living Spirit",
+    "class":"Living Spirit",
+    "elite":false,
+    "attack":[2,2,3,3,3,3,4,5],
+    "move": [2,2,2,3,3,3,3,4]
+  },
   {"id":"E Lurker Clawcrusher",
     "class":"Lurker Clawcrusher",
     "elite":true,
@@ -208,6 +232,18 @@
     "elite":false,
     "attack":[1,1,1,2,2,2,3,3],
     "move": [1,1,2,2,2,2,2,3]
+  },
+  {"id":"E Shrike Fiend",
+    "class":"Shrike Fiend",
+    "elite":true,
+    "attack":[3,3,4,4,5,5,6,6],
+    "move": [2,2,2,2,2,3,3,3]
+  },
+  {"id":"Shrike Fiend",
+    "class":"Shrike Fiend",
+    "elite":false,
+    "attack":[2,2,3,3,3,4,4,4],
+    "move": [1,1,1,2,2,2,3,3]
   },
   {"id":"E Steel Automaton",
     "class":"Steel Automaton",

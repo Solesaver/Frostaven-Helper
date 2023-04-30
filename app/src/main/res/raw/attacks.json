@@ -126,6 +126,52 @@
       {"name":"Frost Breath",         "attack":-1, "move":0, "init":39, "shuffle":true}
     ]
   },
+  {"name":"Ice Wraith",
+    "deck":[
+      {"name":"Shard Strike",         "attack":0, "move":0, "init":16, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":71, "shuffle":false},
+      {"name":"Fade Out",             "attack":0, "move":0, "init":59, "shuffle":false},
+      {"name":"Shift Form",           "attack":-1, "move":0, "init":95, "shuffle":true},
+      {"name":"Restore Essence",      "attack":0, "move":0, "init":13, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":41, "shuffle":false},
+      {"name":"Unholy Strength",      "attack":0, "move":0, "init":59, "shuffle":false},
+      {"name":"Renewed Aggression",   "attack":0, "move":0, "init":44, "shuffle":true}
+    ]
+  },
+  {"name":"Imp",
+    "deck":[
+      {"name":"Phase Out",            "attack":0, "move":0, "init":5, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":76, "shuffle":false},
+      {"name":"Rotten Sting",         "attack":-1, "move":0, "init":43, "shuffle":true},
+      {"name":"Tip the Scales",       "attack":0, "move":0, "init":24, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":37, "shuffle":false},
+      {"name":"Restoration",          "attack":0, "move":1, "init":42, "shuffle":false},
+      {"name":"Dark Charm",           "attack":-1, "move":0, "init":43, "shuffle":true}
+    ]
+  },
+  {"name":"Living Doom",
+    "deck":[
+      {"name":"Face of Darkness",     "attack":1, "move":-1, "init":82, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":57, "shuffle":false},
+      {"name":"Hateful Spikes",       "attack":1, "move":0, "init":17, "shuffle":false},
+      {"name":"Call for Souls",       "attack":0, "move":0, "init":78, "shuffle":true},
+      {"name":"Chilling Aura",        "attack":-1, "move":0, "init":70, "shuffle":false},
+      {"name":"Arresting Advance",    "attack":-1, "move":1, "init":32, "shuffle":false},
+      {"name":"Sunless Abyss",        "attack":0, "move":0, "init":11, "shuffle":false},
+      {"name":"Pull of the Grave",    "attack":-3, "move":1, "init":98, "shuffle":true}
+    ]
+  },
+  {"name":"Living Spirit",
+    "deck":[
+      {"name":"Booming Scream",       "attack":-1, "move":-1, "init":33, "shuffle":true},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":48, "shuffle":false},
+      {"name":"Leech Warmth",         "attack":1, "move":-1, "init":75, "shuffle":false},
+      {"name":"Icy Glare",            "attack":0, "move":-1, "init":67, "shuffle":false},
+      {"name":"Sap Strength",         "attack":-1, "move":-1, "init":22, "shuffle":true},
+      {"name":"Coupled Chain",        "attack":0, "move":0, "init":61, "shuffle":false},
+      {"name":"Angry Howl",           "attack":0, "move":0, "init":55, "shuffle":false}
+    ]
+  },
   {"name":"Lurker Clawcrusher",
     "deck":[
       {"name":"Smash Armor",          "attack":0, "move":-1, "init":58, "shuffle":false},
@@ -162,27 +208,16 @@
       {"name":"Strength of the Deep", "attack":-1, "move":0, "init":41, "shuffle":false}
     ]
   },
-  {"name":"Ice Wraith",
+  {"name":"Ruined Machine",
     "deck":[
-      {"name":"Shard Strike",         "attack":0, "move":0, "init":16, "shuffle":false},
-      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":71, "shuffle":false},
-      {"name":"Fade Out",             "attack":0, "move":0, "init":59, "shuffle":false},
-      {"name":"Shift Form",           "attack":-1, "move":0, "init":95, "shuffle":true},
-      {"name":"Restore Essence",      "attack":0, "move":0, "init":13, "shuffle":false},
       {"name":"Hasty Assault",        "attack":-1, "move":1, "init":41, "shuffle":false},
-      {"name":"Unholy Strength",      "attack":0, "move":0, "init":59, "shuffle":false},
-      {"name":"Renewed Aggression",   "attack":0, "move":0, "init":44, "shuffle":true}
-    ]
-  },
-  {"name":"Imp",
-    "deck":[
-      {"name":"Phase Out",            "attack":0, "move":0, "init":5, "shuffle":false},
-      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":76, "shuffle":false},
-      {"name":"Rotten Sting",         "attack":-1, "move":0, "init":43, "shuffle":true},
-      {"name":"Tip the Scales",       "attack":0, "move":0, "init":24, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":37, "shuffle":false},
-      {"name":"Restoration",          "attack":0, "move":1, "init":42, "shuffle":false},
-      {"name":"Dark Charm",           "attack":-1, "move":0, "init":43, "shuffle":true}
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":85, "shuffle":false},
+      {"name":"Devastating Tackle",   "attack":2, "move":0, "init":42, "shuffle":false},
+      {"name":"Self-Destruct",        "attack":0, "move":0, "init":93, "shuffle":true},
+      {"name":"Latch On",             "attack":0, "move":1, "init":31, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":63, "shuffle":false},
+      {"name":"Fuel Leak",            "attack":0, "move":1, "init":29, "shuffle":false},
+      {"name":"Signal Jam",           "attack":0, "move":0, "init":56, "shuffle":true}
     ]
   },
   {"name":"Scout",
@@ -197,16 +232,16 @@
       {"name":"Cruel Bow",            "attack":-1, "move":-1, "init":29, "shuffle":true}
     ]
   },
-  {"name":"Ruined Machine",
+  {"name":"Shrike Fiend",
     "deck":[
-      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":41, "shuffle":false},
-      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":85, "shuffle":false},
-      {"name":"Devastating Tackle",   "attack":2, "move":0, "init":42, "shuffle":false},
-      {"name":"Self-Destruct",        "attack":0, "move":0, "init":93, "shuffle":true},
-      {"name":"Latch On",             "attack":0, "move":1, "init":31, "shuffle":false},
-      {"name":"Nothing Special",      "attack":0, "move":0, "init":63, "shuffle":false},
-      {"name":"Fuel Leak",            "attack":0, "move":1, "init":29, "shuffle":false},
-      {"name":"Signal Jam",           "attack":0, "move":0, "init":56, "shuffle":true}
+      {"name":"Concentrated Flock",   "attack":0, "move":-1, "init":10, "shuffle":true},
+      {"name":"Angry Cloud",          "attack":0, "move":0, "init":9, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":90, "shuffle":true},
+      {"name":"Birds of Prey",        "attack":-2, "move":0, "init":23, "shuffle":false},
+      {"name":"Darken the Skies",     "attack":-1, "move":0, "init":27, "shuffle":false},
+      {"name":"Fiendish Charge",      "attack":0, "move":2, "init":73, "shuffle":false},
+      {"name":"Gather the Flock",     "attack":0, "move":0, "init":72, "shuffle":false},
+      {"name":"Dive Bomb",            "attack":0, "move":0, "init":49, "shuffle":false}
     ]
   },
   {"name":"Steel Automaton",
