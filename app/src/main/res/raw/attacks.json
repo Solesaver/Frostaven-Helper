@@ -149,6 +149,17 @@
       {"name":"Dark Charm",           "attack":-1, "move":0, "init":43, "shuffle":true}
     ]
   },
+  {"name":"Living Bones",
+    "deck":[
+      {"name":"Drain Life",           "attack":0, "move":-2, "init":20, "shuffle":true},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":45, "shuffle":false},
+      {"name":"Power Slash",          "attack":2, "move":0, "init":81, "shuffle":false},
+      {"name":"Eternal Life",         "attack":0, "move":0, "init":12, "shuffle":true},
+      {"name":"Calculated Strike",    "attack":1, "move":1, "init":64, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":25, "shuffle":false},
+      {"name":"Focused Stabs",        "attack":0, "move":0, "init":74, "shuffle":false}
+    ]
+  },
   {"name":"Living Doom",
     "deck":[
       {"name":"Face of Darkness",     "attack":1, "move":-1, "init":82, "shuffle":false},

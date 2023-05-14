@@ -161,6 +161,18 @@
     "attack":[2,2,2,2,3,3,4,5],
     "move": [1,1,1,2,2,2,2,3]
   },
+  {"id":"E Living Bones",
+    "class":"Living Bones",
+    "elite":true,
+    "attack":[2,2,3,3,4,4,4,5],
+    "move": [4,4,4,4,4,4,5,6]
+  },
+  {"id":"Living Bones",
+    "class":"Living Bones",
+    "elite":false,
+    "attack":[1,1,2,2,3,3,3,4],
+    "move": [2,3,3,3,3,3,4,4]
+  },
   {"id":"E Living Doom",
     "class":"Living Doom",
     "elite":true,
