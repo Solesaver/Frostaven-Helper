@@ -126,6 +126,16 @@
       {"name":"Frost Breath",         "attack":-1, "move":0, "init":39, "shuffle":true}
     ]
   },
+  {"name":"Hound",
+    "deck":[
+      {"name":"Harrowing Howl",       "attack":0, "move":0, "init":7, "shuffle":false},
+      {"name":"Pack Hunting",         "attack":0, "move":0, "init":19, "shuffle":true},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":26, "shuffle":false},
+      {"name":"Sharp Fangs",          "attack":-1, "move":-2, "init":72, "shuffle":false},
+      {"name":"Gripping Teeth",       "attack":0, "move":-1, "init":6, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-2, "init":83, "shuffle":false}
+    ]
+  },
   {"name":"Ice Wraith",
     "deck":[
       {"name":"Shard Strike",         "attack":0, "move":0, "init":16, "shuffle":false},
@@ -211,12 +221,24 @@
     "deck":[
       {"name":"Hasty Assault",        "attack":-1, "move":1, "init":28, "shuffle":false},
       {"name":"Focused Strikes",      "attack":0, "move":0, "init":38, "shuffle":false},
-      {"name":"Beserk Rage",          "attack":1, "move":0, "init":64, "shuffle":false},
+      {"name":"Berserk Rage",          "attack":1, "move":0, "init":64, "shuffle":false},
       {"name":"Hardened by Frost",    "attack":-1, "move":0, "init":23, "shuffle":true},
       {"name":"Defensive Claws",      "attack":0, "move":0, "init":11, "shuffle":true},
       {"name":"Nothing Special",      "attack":0, "move":0, "init":38, "shuffle":false},
       {"name":"Calculated Strike",    "attack":1, "move":-1, "init":61, "shuffle":false},
       {"name":"Strength of the Deep", "attack":-1, "move":0, "init":41, "shuffle":false}
+    ]
+  },
+  {"name":"Polar Bear",
+    "deck":[
+      {"name":"Low Slash",            "attack":-1, "move":-1, "init":14, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":41, "shuffle":false},
+      {"name":"Rampage",              "attack":-1, "move":-2, "init":80, "shuffle":true},
+      {"name":"Hibernate",            "attack":0, "move":0, "init":3, "shuffle":false},
+      {"name":"Hasty Assault",        "attack":-1, "move":1, "init":13, "shuffle":true},
+      {"name":"Full Force",           "attack":1, "move":0, "init":29, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":60, "shuffle":false},
+      {"name":"Claw Swipes",          "attack":-1, "move":0, "init":61, "shuffle":false}
     ]
   },
   {"name":"Ruined Machine",

@@ -161,6 +161,18 @@
     "attack":[2,2,2,2,3,3,4,5],
     "move": [1,1,1,2,2,2,2,3]
   },
+  {"id":"E Hound",
+    "class":"Hound",
+    "elite":true,
+    "attack":[2,2,3,4,4,4,5,6],
+    "move": [5,5,5,5,5,5,6,6]
+  },
+  {"id":"Hound",
+    "class":"Hound",
+    "elite":false,
+    "attack":[2,2,2,2,3,3,3,4],
+    "move": [3,4,4,4,4,4,5,5]
+  },
   {"id":"E Living Bones",
     "class":"Living Bones",
     "elite":true,
@@ -232,6 +244,18 @@
     "elite":false,
     "attack":[2,2,2,3,3,4,4,5],
     "move": [2,2,3,3,3,3,4,4]
+  },
+  {"id":"E Polar Bear",
+    "class":"Polar Bear",
+    "elite":true,
+    "attack":[4,4,4,5,5,6,6,7],
+    "move": [2,2,3,3,4,4,4,4]
+  },
+  {"id":"Polar Bear",
+    "class":"Polar Bear",
+    "elite":false,
+    "attack":[3,3,3,3,4,4,4,5],
+    "move": [2,2,2,3,3,3,4,4]
   },
   {"id":"E Ruined Machine",
     "class":"Ruined Machine",
