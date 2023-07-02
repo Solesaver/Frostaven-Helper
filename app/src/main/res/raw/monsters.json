@@ -53,6 +53,18 @@
     "attack":[3,3,4,4,5,5,6,7],
     "move": [2,3,3,3,3,3,3,3]
   },
+  {"id":"E Chaos Demon",
+    "class":"Chaos Demon",
+    "elite":true,
+    "attack":[3,4,5,5,6,6,8,9],
+    "move": [4,4,4,5,5,5,5,6]
+  },
+  {"id":"Chaos Demon",
+    "class":"Chaos Demon",
+    "elite":false,
+    "attack":[2,3,3,4,4,5,6,7],
+    "move": [3,3,3,3,4,4,4,4]
+  },
   {"id":"E Earth Demon",
     "class":"Earth Demon",
     "elite":true,
@@ -256,6 +268,18 @@
     "elite":false,
     "attack":[3,3,3,3,4,4,4,5],
     "move": [2,2,2,3,3,3,4,4]
+  },
+  {"id":"E Robotic Boltshooter",
+    "class":"Robotic Boltshooter",
+    "elite":true,
+    "attack":[1,2,2,2,3,3,4,4],
+    "move": [1,1,1,1,1,2,2,2]
+  },
+  {"id":"Robotic Boltshooter",
+    "class":"Robotic Boltshooter",
+    "elite":false,
+    "attack":[1,2,2,2,3,3,4,4],
+    "move": [1,1,1,1,1,2,2,2]
   },
   {"id":"E Ruined Machine",
     "class":"Ruined Machine",

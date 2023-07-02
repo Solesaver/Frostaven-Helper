@@ -46,6 +46,18 @@
       {"name":"Twin Shots",           "attack":-1, "move":-1, "init":52, "shuffle":false}
     ]
   },
+  {"name":"Chaos Demon",
+    "deck":[
+      {"name":"Hungry Maw",           "attack":-1, "move":-1, "init":98, "shuffle":true},
+      {"name":"Black Tendrils",       "attack":1, "move":-1, "init":51, "shuffle":false},
+      {"name":"Whirlwind",            "attack":-1, "move":0, "init":20, "shuffle":false},
+      {"name":"Heat Blast",           "attack":-1, "move":1, "init":1, "shuffle":false},
+      {"name":"Arcane Explosion",     "attack":0, "move":0, "init":77, "shuffle":true},
+      {"name":"White Claws",          "attack":0, "move":0, "init":42, "shuffle":false},
+      {"name":"Seismic Punch",        "attack":1, "move":-2, "init":67, "shuffle":false},
+      {"name":"Chilling Breath",      "attack":0, "move":-1, "init":14, "shuffle":false}
+    ]
+  },
   {"name":"Earth Demon",
     "deck":[
       {"name":"Reckless Charge",      "attack":0, "move":1, "init":79, "shuffle":false},
@@ -239,6 +251,18 @@
       {"name":"Full Force",           "attack":1, "move":0, "init":29, "shuffle":false},
       {"name":"Calculated Strike",    "attack":1, "move":-1, "init":60, "shuffle":false},
       {"name":"Claw Swipes",          "attack":-1, "move":0, "init":61, "shuffle":false}
+    ]
+  },
+  {"name":"Robotic Boltshooter",
+    "deck":[
+      {"name":"Safety Valve",         "attack":-1, "move":-1, "init":22, "shuffle":true},
+      {"name":"Retracted Assault",    "attack":0, "move":-1, "init":48, "shuffle":false},
+      {"name":"Ballista Bolt",        "attack":2, "move":0, "init":91, "shuffle":false},
+      {"name":"Repair Drones",        "attack":0, "move":0, "init":16, "shuffle":true},
+      {"name":"Calculated Shot",      "attack":1, "move":-1, "init":83, "shuffle":false},
+      {"name":"Sharpshooter",         "attack":-1, "move":1, "init":44, "shuffle":false},
+      {"name":"Nothing Special",      "attack":0, "move":0, "init":57, "shuffle":false},
+      {"name":"Focus Fire",           "attack":-1, "move":0, "init":78, "shuffle":false}
     ]
   },
   {"name":"Ruined Machine",
