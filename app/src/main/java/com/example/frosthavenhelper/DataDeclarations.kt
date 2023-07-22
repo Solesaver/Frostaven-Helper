@@ -71,6 +71,7 @@ enum class MonsterId {
     LivingDoom,
     ELivingSpirit,
     LivingSpirit,
+    LordofChaos,
     ELurkerClawcrusher,
     LurkerClawcrusher,
     ELurkerMindsnipper,

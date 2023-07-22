@@ -177,7 +177,7 @@
       {"name":"Nothing Special",      "attack":0, "move":0, "init":45, "shuffle":false},
       {"name":"Power Slash",          "attack":2, "move":0, "init":81, "shuffle":false},
       {"name":"Eternal Life",         "attack":0, "move":0, "init":12, "shuffle":true},
-      {"name":"Calculated Strike",    "attack":1, "move":1, "init":64, "shuffle":false},
+      {"name":"Calculated Strike",    "attack":1, "move":-1, "init":64, "shuffle":false},
       {"name":"Hasty Assault",        "attack":-1, "move":1, "init":25, "shuffle":false},
       {"name":"Focused Stabs",        "attack":0, "move":0, "init":74, "shuffle":false}
     ]
